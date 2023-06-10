@@ -6,7 +6,7 @@
 
 ## Instrucciones
 
-1. Clone este repositorio en su computadora local.
+1. Clonar este repositorio en su computadora local.
 2. Ir a la carpeta del repositorio y ejecutar el archivo 'index.html'
 4. Dar permiso al navegador para utilizar el micrófono.
 5. Siga las instrucciones indicadas y trate de adivinar el número.
