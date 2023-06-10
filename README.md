@@ -2,7 +2,7 @@
 
 ## Requisitos
 
-- Tener instalado Google Chrome o cualquier navegador web.
+- Tener instalado Google Chrome o cualquier otro navegador web.
 
 ## Instrucciones
 
