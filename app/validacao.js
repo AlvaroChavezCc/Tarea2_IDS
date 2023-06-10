@@ -8,25 +8,25 @@ function verificaSeOChutePossuiUmValorValido(chute) {
 
     if (numeroForMaiorOuMenorQueOValorPermitido(numero)) {
         elementoChute.innerHTML += `
-        <div>Valor inválido: Fale um número entre ${menorValor} e ${maiorValor}</div>
+        <div>Valor inválido: Diga un número entre ${menorValor} y ${maiorValor}</div>
         `
         return
     }
 
     if (numero === numeroSecreto) {
         document.body.innerHTML = `
-            <h2>Você acertou!</h2>
-            <h3>O número secreto era ${numeroSecreto}</h3>
+            <h2>Acertaste!</h2>
+            <h3>El número secreto era ${numeroSecreto}</h3>
 
-            <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
+            <button id="jugar-nuevamente" class="botón-jugar">Jugar nuevamente</button>
         `
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
-        <div>O número secreto é menor <i class="fa-solid fa-down-long"></i></div>
+        <div>El número secreto es menor <i class="fa-solid fa-down-long"></i></div>
         `
     } else {
         elementoChute.innerHTML += `
-        <div>O número secreto é maior <i class="fa-solid fa-up-long"></i></div>
+        <div>El número secreto es mayor <i class="fa-solid fa-up-long"></i></div>
         `
     }
 }
@@ -40,7 +40,7 @@ function numeroForMaiorOuMenorQueOValorPermitido(numero){
 }
 
 document.body.addEventListener('click', e => {
-    if (e.target.id == 'jogar-novamente') {
+    if (e.target.id == 'jugar-nuevamente') {
         window.location.reload()
     }
 })
